@@ -251,7 +251,7 @@ body,
 	position: absolute;
 	bottom: 10px;
 	right: 50%;
-	transform: translate(50%, 60px);
+	transform: translate(50%, 160px);
 	padding: 10px 20px;
 	background: var(--light-blue);
 	color: #fff;

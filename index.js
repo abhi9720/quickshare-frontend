@@ -124,6 +124,7 @@ const onFileUploadSuccess = (res) => {
 	emailForm[2].removeAttribute('disabled');
 	emailForm[2].innerText = 'Send';
 	progressContainer.style.display = 'none'; // hide the box
+	showToast('File Uploaded successfully');
 
 	const { file: url } = JSON.parse(res);
 	console.log(url);
@@ -162,7 +163,7 @@ emailForm.addEventListener('submit', (e) => {
 		});
 });
 
-let toastTimer;
+let toastTimer = 100;
 // the toast function
 const showToast = (msg) => {
 	clearTimeout(toastTimer);
